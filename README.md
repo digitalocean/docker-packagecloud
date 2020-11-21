@@ -7,12 +7,12 @@ A simple container for [package_cloud](https://packagecloud.io).
 ## Usage
 
 ```
-docker run -it --rm digitalocean/package_cloud help
+docker run -it --rm digitalocean/packagecloud help
 ```
 
 To upload packages use the following command
 
 ```
-docker run -it --rm -v <path-to-packages>:/packages -e PACKAGECLOUD_TOKEN=<your api token> push <username>/<repo>/debian/stretch *.deb
+docker run -it --rm -v <path-to-packages>:/packages -e PACKAGECLOUD_TOKEN=<your api token> digitalocean/packagecloud push <username>/<repo>/debian/stretch *.deb
 ```
 
